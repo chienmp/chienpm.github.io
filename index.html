@@ -83,19 +83,27 @@
     <!-- Hero Section -->
     <section class="relative h-screen bg-cover bg-center" style="background-image: url('https://yensaokim.my.canva.site/homepage/media/21ffeb8db2f3ace5511e678cb8c4cce7.png');">
         <!-- Overlay for text and button content -->
-        <div class="absolute inset-0 flex flex-col justify-center text-white px-8 py-12">
-            <!-- Centered Text Content Area -->
-            <div class="max-w-lg mb-24"> <!-- Adjust this margin as needed to create space above button and icon -->
-                <h1 class="text-4xl font-bold leading-tight">Chắt Lọc Từ Thiên Nhiên</h1>
-                <h2 class="text-3xl font-semibold mt-4">Kết Tinh Bằng Tâm Huyết</h2>
-                <p class="mt-4 text-lg">Thu hoạch thủ công và chế biến tỉ mỉ, chúng tôi gìn giữ và phát huy tinh hoa sản phẩm thiên nhiên Việt Nam</p>
-                <!-- Button in the text area to keep it aligned with the text -->
-                <a href="#"
-                   class="inline-block mt-6 bg-yellow-600 text-black px-6 py-3 rounded-lg font-semibold hover:bg-yellow-700">
-                   Tham Quan Nhà Yến
-                </a>
-            </div>
-        </div>
+        <section class="relative h-screen bg-cover bg-center" style="background-image: url('https://yensaokim.my.canva.site/homepage/media/21ffeb8db2f3ace5511e678cb8c4cce7.png');">
+          <!-- Text Content in Bottom-Left Corner -->
+          <div class="absolute inset-x-0 bottom-0 left-0 flex flex-col justify-start text-white px-8 py-2">
+              <div class="max-w-lg mb-4"> <!-- Adjust mb-4 for spacing as needed -->
+                  <h1 class="text-4xl font-bold leading-tight">Chắt Lọc Từ Thiên Nhiên</h1>
+                  <h2 class="text-3xl font-semibold mt-4">Kết Tinh Bằng Tâm Huyết</h2>
+                  <p class="mt-4 text-lg">Thu hoạch thủ công và chế biến tỉ mỉ, chúng tôi gìn giữ và phát huy tinh hoa sản phẩm thiên nhiên Việt Nam</p>
+                  <!-- Button aligned with the text area -->
+                  <a href="#"
+   class="inline-block mt-6 bg-yellow-600 text-black px-6 py-3 rounded-lg font-semibold hover:bg-yellow-700">
+   Tham Quan Nhà Yến
+</a>
+              </div>
+          </div>
+      
+          <!-- Bottom-right phone icon -->
+          <div class="absolute bottom-5 right-5">
+              <i class="fas fa-phone-alt text-6xl text-white animate-shake"></i>
+          </div>
+      </section>
+      
     
         <!-- Bottom-right phone icon -->
         <div class="absolute bottom-5 right-5">
@@ -638,3 +646,4 @@
         menuButton.classList.toggle("active-button");
     }
 </script>
+1
