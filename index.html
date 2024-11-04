@@ -29,6 +29,16 @@
                 <img src="https://yensaokim.my.canva.site/homepage/media/8f1c959374a0f35f3d0793b39d2a18c8.png"
                     alt="Yến Sào Kim Logo" class="h-12">
             </div>
+
+            <!-- Navigation links -->
+            <nav id="desktopMenu" class="hidden md:flex flex-grow justify-center space-x-8 text-lg font-semibold">
+                <a href="#" class="text-gray-800 hover:text-yellow-500">CÂU CHUYỆN</a>
+                <a href="#" class="text-gray-800 hover:text-yellow-500">SẢN PHẨM</a>
+                <a href="#" class="text-gray-800 hover:text-yellow-500">GÓI NGUYÊN LIỆU</a>
+                <a href="#" class="text-gray-800 hover:text-yellow-500">LIÊN HỆ</a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
             <button onclick="toggleMobileMenu()" id="mobileMenuButton"
                 class="block md:hidden text-gray-800 focus:outline-none">
                 <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -36,42 +46,9 @@
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
             </button>
-
-            <!-- Navigation links -->
-            <nav id="desktopMenu" class="hidden md:flex space-x-8 text-lg font-semibold">
-                <a href="#" class="text-gray-800 hover:text-yellow-500">CÂU CHUYỆN</a>
-                <a href="#" class="text-gray-800 hover:text-yellow-500">SẢN PHẨM</a>
-                <a href="#" class="text-gray-800 hover:text-yellow-500">GÓI NGUYÊN LIỆU</a>
-                <a href="#" class="text-gray-800 hover:text-yellow-500">LIÊN HỆ</a>
-            </nav>
-
-            <!-- Language selector -->
-            <div class="text-lg font-semibold relative">
-                <div class="inline-block text-left">
-                    <button onclick="toggleDropdown()"
-                        class="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none">
-                        ENG - VI
-                        <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-                            fill="currentColor">
-                            <path fill-rule="evenodd"
-                                d="M5.23 7.21a.75.75 0 011.06.02L10 11.2l3.71-3.97a.75.75 0 111.1 1.02l-4.25 4.54a.75.75 0 01-1.1 0L5.23 8.27a.75.75 0 01.02-1.06z"
-                                clip-rule="evenodd" />
-                        </svg>
-                    </button>
-                    <div id="dropdownMenu"
-                        class="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-50 hidden">
-                        <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
-                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                                role="menuitem">English</a>
-                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                                role="menuitem">Vietnamese</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </header>
-    <div id="mobileMenu" class="md:hidden absolute top-20 right-20 w-1/4 bg-white shadow-lg z-50 hidden">
+    <div id="mobileMenu" class="md:hidden absolute top-20 right-4 w-1/4 bg-white shadow-lg z-50 hidden">
         <nav class="flex flex-col space-y-4 p-4 text-lg font-semibold">
             <a href="#" class="text-gray-800 hover:text-yellow-500">CÂU CHUYỆN</a>
             <a href="#" class="text-gray-800 hover:text-yellow-500">SẢN PHẨM</a>
@@ -81,42 +58,41 @@
     </div>
 
     <!-- Hero Section -->
-    <section class="relative h-screen bg-cover bg-center" style="background-image: url('https://yensaokim.my.canva.site/homepage/media/21ffeb8db2f3ace5511e678cb8c4cce7.png');">
-        <!-- Overlay for text and button content -->
-        <section class="relative h-screen bg-cover bg-center" style="background-image: url('https://yensaokim.my.canva.site/homepage/media/21ffeb8db2f3ace5511e678cb8c4cce7.png');">
-          <!-- Text Content in Bottom-Left Corner -->
-          <div class="absolute inset-x-0 bottom-0 left-0 flex flex-col justify-start text-white px-8 py-2">
-              <div class="max-w-lg mb-4"> <!-- Adjust mb-4 for spacing as needed -->
-                  <h1 class="text-4xl font-bold leading-tight">Chắt Lọc Từ Thiên Nhiên</h1>
-                  <h2 class="text-3xl font-semibold mt-4">Kết Tinh Bằng Tâm Huyết</h2>
-                  <p class="mt-4 text-lg">Thu hoạch thủ công và chế biến tỉ mỉ, chúng tôi gìn giữ và phát huy tinh hoa sản phẩm thiên nhiên Việt Nam</p>
-                  <!-- Button aligned with the text area -->
-                  <a href="#"
-   class="inline-block mt-6 bg-yellow-600 text-black px-6 py-3 rounded-lg font-semibold hover:bg-yellow-700">
-   Tham Quan Nhà Yến
-</a>
-              </div>
-          </div>
-      
-          <!-- Bottom-right phone icon -->
-          <div class="absolute bottom-5 right-5">
-              <i class="fas fa-phone-alt text-6xl text-white animate-shake"></i>
-          </div>
-      </section>
-      
-    
+    <section class="relative h-[calc(100vh-160px)] md:h-screen bg-cover bg-center "
+        style="background-image: url('https://yensaokim.my.canva.site/homepage/media/21ffeb8db2f3ace5511e678cb8c4cce7.png');">
+            <!-- Text Content in Bottom-Left Corner -->
+            <div class="absolute inset-x-0 bottom-0 left-0 flex flex-col justify-start text-white px-8 py-2 pb-16">
+                <div class="max-w-lg mb-4"> <!-- Adjust mb-4 for spacing as needed -->
+                    <h1 class="text-4xl font-bold leading-tight">Chắt Lọc Từ Thiên Nhiên</h1>
+                    <h2 class="text-3xl font-semibold mt-4">Kết Tinh Bằng Tâm Huyết</h2>
+                    <p class="mt-4 text-lg">Thu hoạch thủ công và chế biến tỉ mỉ, chúng tôi gìn giữ và phát huy tinh hoa
+                        sản phẩm thiên nhiên Việt Nam</p>
+                    <!-- Button aligned with the text area -->
+                    <a href="#"
+                        class="inline-block mt-6 bg-yellow-600 text-black px-6 py-3 rounded-lg font-semibold hover:bg-yellow-700">
+                        Tham Quan Nhà Yến
+                    </a>
+                </div>
+            </div>
+
+            <!-- Bottom-right phone icon -->
+            <div class=" pb-16 absolute bottom-5 right-5 flex items-center justify-center">
+
+                <div >
+                    <i class="fas fa-phone-alt text-6xl text-white animate-shake"></i>
+                </div>
+            </div>
+
         <!-- Bottom-right phone icon -->
-        <div class="absolute bottom-5 right-5">
-            <i class="fas fa-phone-alt text-6xl text-white animate-shake"></i>
+        <div class="text-scroll absolute bottom-0 left-0 text-white ">
+            <span>TRỰC TIẾP TỪ NGUỒN</span>
+            <span>XUẤT XỨ VIỆT NAM</span>
+            <span>100% THỦ CÔNG</span>
+            <span>300% TÂM HUYẾT</span>
         </div>
     </section>
     <div class="bg-white mt-8"></div>
-    <div class="text-scroll bg-white">
-        <span>TRỰC TIẾP TỪ NGUỒN</span>
-        <span>XUẤT XỨ VIỆT NAM</span>
-        <span>100% THỦ CÔNG</span>
-        <span>300% TÂM HUYẾT</span>
-    </div>
+
 
     <section class="py-16 bg-white">
         <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -206,7 +182,7 @@
                     alt="Quà Tặng Doanh Nghiệp" class="w-full  translate-y-[-15%] min-h-[350px] object-cover">
             </div>
 
-            <div class="flex-1 flex flex-col justify-center text-left">
+            <div class="flex-1 flex flex-col px-6 justify-center text-left">
                 <h2 class="text-3xl font-bold text-white">QUÀ TẶNG DOANH NGHIỆP</h2>
                 <p class="mt-4 text-white text-lg">Yến Sào Kim hiểu những cân nhắc kỹ lưỡng của quý khách khi chọn quà
                     cho đối tác.</p>
@@ -231,7 +207,7 @@
             <div class="overflow-hidden">
                 <div class="whitespace-nowrap transition-all duration-500 ease-in-out" id="carousel-items">
                     <!-- Product 1 -->
-                    <div class="inline-block w-1/2 sm:w-1/4 md:w-1/6 text-center p-2">
+                    <div class="inline-block w-1/2 sm:w-1/4 md:w-1/6 text-center ">
                         <div class="bg-gray-200 border border-gray-200 rounded-lg p-4 shadow-md">
                             <img src="https://yensaokim.my.canva.site/homepage/media/847f57a60c53cc1f5e506fe4b096e408.png"
                                 alt="Trà Đen" class="mx-auto mb-4">
@@ -239,7 +215,7 @@
                             <p class="text-sm italic text-gray-600">ANH QUỐC</p>
                         </div>
                     </div>
-                    <div class="inline-block w-1/2 sm:w-1/4 md:w-1/6 text-center p-2">
+                    <div class="inline-block w-1/2 sm:w-1/4 md:w-1/6 text-center">
                         <div class="bg-gray-200 border border-gray-200 rounded-lg p-4 shadow-md">
                             <img src="https://yensaokim.my.canva.site/homepage/media/b1c02c10f3d033dde238f17380503d86.png"
                                 alt="Kỷ Tử" class="mx-auto mb-4">
@@ -248,7 +224,7 @@
                         </div>
                     </div>
 
-                    <div class="inline-block w-1/2 sm:w-1/4 md:w-1/6 text-center p-2">
+                    <div class="inline-block w-1/2 sm:w-1/4 md:w-1/6 text-center">
                         <div class="bg-gray-200 border border-gray-200 rounded-lg p-4 shadow-md">
                             <img src="https://yensaokim.my.canva.site/homepage/media/270a628d16693610bb19a4b72a3d3413.png"
                                 alt="Long Nhãn" class="mx-auto mb-4">
@@ -256,7 +232,7 @@
                             <p class="text-sm sm:text-sm italic">HƯNG YÊN, VIỆT NAM</p>
                         </div>
                     </div>
-                    <div class="inline-block w-1/2 sm:w-1/4 md:w-1/6 text-center p-2">
+                    <div class="inline-block w-1/2 sm:w-1/4 md:w-1/6 text-center">
                         <div class="bg-gray-200 border border-gray-200 rounded-lg p-4 shadow-md">
                             <img src="https://yensaokim.my.canva.site/homepage/media/df59e7f17e1e0a57c1ff812f90ec3dd5.png"
                                 alt="Long Nhãn" class="mx-auto mb-4">
@@ -264,7 +240,7 @@
                             <p class="text-sm sm:text-sm italic">LÂM ĐỒNG, VIỆT NAM</p>
                         </div>
                     </div>
-                    <div class="inline-block w-1/2 sm:w-1/4 md:w-1/6 text-center p-2">
+                    <div class="inline-block w-1/2 sm:w-1/4 md:w-1/6 text-center ">
                         <div class="bg-gray-200 border border-gray-200 rounded-lg p-4 shadow-md">
                             <img src="https://yensaokim.my.canva.site/homepage/media/68862079b00e7671e28aefd4cb907651.png"
                                 alt="Long Nhãn" class="mx-auto mb-4">
@@ -439,6 +415,7 @@
 
     .text-scroll {
         display: flex;
+        width: 100%;
         justify-content: space-around;
         font-weight: bold;
         padding: 10px 0;
@@ -448,6 +425,10 @@
     @media (max-width: 640px) {
         .text-scroll {
             overflow: hidden;
+        }
+        
+        body {
+            font-size: 14px;
         }
 
         .text-scroll span {
@@ -646,4 +627,3 @@
         menuButton.classList.toggle("active-button");
     }
 </script>
-1
